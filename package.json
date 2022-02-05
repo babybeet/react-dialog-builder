@@ -1,0 +1,29 @@
+{
+    "name": "react-dialog-builder",
+    "description": "This library provides an easy and convenient programmatic approach to render anything as a dialog",
+    "version": "1.0.1",
+    "private": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "license": "MIT",
+    "keywords": [
+        "react dialog",
+        "react modal",
+        "dialog",
+        "modal"
+    ],
+    "scripts": {
+        "prepare": "husky install",
+        "test": "cd lib && npm test",
+        "build": "cd lib && npm run build",
+        "publish": "cd lib && cd dist && npm publish"
+    },
+    "devDependencies": {
+        "eslint": "^8.8.0",
+        "husky": "^7.0.4"
+    },
+    "lint-staged": {
+        "**/*.{ts,tsx}": "eslint --cache --fix"
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "html.format.wrapAttributes": "force-aligned",
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.tabSize": 4
+    },
+    "[scss]": {
+        "editor.tabSize": 4
+    },
+    "[json]": {
+        "editor.tabSize": 4,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "beautify.tabSize": 4,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "html.format.indentInnerHtml": true,
+    "editor.wordWrapColumn": 100,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "eslint.validate": [
+        "typescript",
+        "typescriptreact",
+        "javascript",
+        "javascriptreact"
+    ],
+    "cSpell.words": [
+        "Deque",
+        "reasonings"
+    ],
+    "typescriptHero.imports.insertSemicolons": true,
+    "typescriptHero.imports.insertSpaceBeforeAndAfterImportBraces": true,
+    "typescriptHero.imports.removeTrailingIndex": true,
+    "typescriptHero.imports.stringQuoteStyle": "'"
+}

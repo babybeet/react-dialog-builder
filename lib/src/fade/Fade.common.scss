@@ -1,0 +1,32 @@
+.bx-fade-in {
+    animation: bx-fadein 500ms ease forwards;
+}
+
+.bx-fade-out {
+    animation: bx-fadeout 500ms ease forwards;
+    pointer-events: none;
+}
+
+@keyframes bx-fadein {
+    from {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes bx-fadeout {
+    from {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}

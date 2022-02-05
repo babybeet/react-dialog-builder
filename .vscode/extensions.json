@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "michelemelluso.code-beautifier",
+        "dbaeumer.vscode-eslint",
+        "rbbit.typescript-hero",
+        "streetsidesoftware.code-spell-checker"
+    ]
+}

@@ -1,0 +1,71 @@
+@import '@constants.common';
+
+.bx-dialog-container {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+
+    &.bx-active {
+        opacity: 1;
+        pointer-events: all;
+        z-index: 999;
+    }
+}
+
+.bx-dialog {
+    transform-origin: 50% 50%;
+    position: fixed;
+    top: auto;
+    left: auto;
+    animation-duration: 250ms;
+    animation-timing-function: $easing-function;
+    animation-fill-mode: forwards;
+    max-width: 95vw;
+    max-height: 95vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.bx-dialog__title:empty {
+    display: none;
+}
+
+.bx-dialog--entering {
+    animation-name: bx-dialog--entering;
+}
+
+.bx-dialog--leaving {
+    animation-name: bx-dialog--leaving;
+}
+
+@keyframes bx-dialog--entering {
+    from {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(10px) scale(0.95, 0.95);
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0) scale(1, 1);
+    }
+}
+
+@keyframes bx-dialog--leaving {
+    from {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0) scale(1, 1);
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(10px) scale(0.99, 0.99);
+    }
+}
